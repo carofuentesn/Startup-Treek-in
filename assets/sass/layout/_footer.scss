@@ -1,0 +1,36 @@
+footer {
+    height: 85px;
+    text-align: center;
+    margin: 0;
+    /*display: flex;
+    justify-content: space-between;
+    align-items: center;*/
+    
+    font-family: $font-principal;
+    font-size: $small;
+    color: $color-font2;
+    background-color: $color-bg-footer;
+    padding: 5% 10%;
+    ul {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        padding: 0;
+        li {
+            padding-right: 18px;
+        }
+    }
+    p {
+        margin-top: 10px;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0% 10%;
+    }
+  }

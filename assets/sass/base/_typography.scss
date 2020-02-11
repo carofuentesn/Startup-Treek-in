@@ -1,0 +1,27 @@
+h1 {
+    font-family: $font-principal;
+    font-size: $x4-large;
+    font-weight: $bold;
+    color: $color-font1;
+}
+
+h2 {
+    font-family: $font-principal;
+    font-size: $x3-large;
+    font-weight: $bold;
+    color: $color-font1;
+}
+
+h3 {
+    font-family: $font-principal;
+    font-size: $x-large;
+    font-weight: $regular;
+    color: $color-font1;
+}
+
+p, section li, a {
+    font-family: $font-secundaria;
+    font-size: $small!important;
+    font-weight: $regular;
+}
+

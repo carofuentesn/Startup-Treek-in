@@ -1,0 +1,34 @@
+button {
+    color: $color-font2;
+    font-family: $font-principal;
+    font-size: $small;
+    font-weight: $bold;
+    background-color: $normal-state;
+    
+    &:hover {
+        background-color: $hover-state;
+    }
+    &:focus {
+        background-color:  #aeacaf;
+    }
+
+}
+
+nav button {
+    border: none;
+    height: 30px;
+}
+
+#nav__button-sesion {
+    background-color: $color-font2!important;
+    color: $color-font1;
+    &:hover {
+        color:$color-font3;
+    }
+}
+
+.section__cards-1  button{
+    border: none;
+    width: 100%;
+    height: 50px;
+}

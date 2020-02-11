@@ -1,0 +1,134 @@
+/*main 1 {
+  img {
+    height: 90%;
+  }
+  div p {
+    line-height : 25px;
+  }
+  h2 {
+    text-align: center;
+  }
+}*/
+
+///////////////////////////////////////////////////////// MAIN FINAL
+main {
+
+  h2 {
+    text-align: center;
+  }
+  h3 {
+    font-weight: $bold;
+    font-size: $large;
+  }
+}
+
+.main__estadisticas {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 10%;
+  .main__estadisticas-texto {
+    width: 300px;
+    p {
+      line-height: 25px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .main__estadisticas {
+    flex-direction: row;
+  }
+  .main__estadisticas-texto {
+    
+    padding-left: 50px;
+    p {
+      line-height: 25px;
+      width: 400px;
+    }
+  }
+}
+
+///////////////////////////////////////////////////////// SECTION
+
+section {
+  padding: 300px 10% 50px 10%;
+  background-image: url(../img/bg-price.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+
+  .section__precios {
+    text-align: center;
+    color: $color-font2 !important;
+  }
+  .section__cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .section__cards-1 {
+      width: 100%;
+      height: 390px;
+      padding: 20px;
+      margin-bottom: 50px;
+      background-color: $color-font2;
+      &:hover {
+        box-shadow: 2px 3px 5px #999;
+      }
+      h3, h2 {
+        margin: 10px;
+      }
+      ul {
+        line-height: 30px;
+        .ocultos {
+          visibility: hidden;
+        }
+      }
+      div {
+        margin-top: auto;
+        padding: 10px 0;
+        button {
+          margin: 10px 0;
+        }
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  section {
+    padding: 250px 10% 100px 10%;
+    background-position: top;
+  }
+  .section__cards {
+    flex-direction: row !important;
+    justify-content: space-around;
+
+    .section__cards-1 {
+      width: 25% !important;
+    }
+  }
+}
+
+
+//////////////////////////////////ANIMACION
+
+.animation-element {
+  img {
+  width: 300px;
+  height: auto;
+  }
+  opacity: 0;
+  transition: all 500ms linear;
+  transform: translate3d(0px, 10px, 0px); //ejes x y z
+  transition-delay: 1s; //es una espera 
+  position: relative;
+}
+
+.animation-element.in-view { //el inview permite animar el elemento a medida que es visualizado
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+}

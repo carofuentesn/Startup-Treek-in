@@ -1,0 +1,23 @@
+header {
+    height: 700px;
+    div p {
+      line-height : 25px;
+    }
+  }
+  
+  .hero-section {
+    background-image: url(../img/bg-hero.svg);
+    background-repeat: no-repeat;
+    background-size: 150%;
+    background-position: bottom right;
+    height: 600px;
+  }
+  
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {
+    .hero-section {
+      background-size: cover;
+      background-position: center;
+      height: 910px;
+    }
+  }
