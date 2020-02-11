@@ -1,16 +1,4 @@
-/*main 1 {
-  img {
-    height: 90%;
-  }
-  div p {
-    line-height : 25px;
-  }
-  h2 {
-    text-align: center;
-  }
-}*/
-
-///////////////////////////////////////////////////////// MAIN FINAL
+///////////////////////////////////////////////////////// MAIN 
 main {
 
   h2 {
@@ -29,7 +17,7 @@ main {
   flex-direction: column;
   padding: 0 10%;
   .main__estadisticas-texto {
-    width: 300px;
+    width: 290px;
     p {
       line-height: 25px;
     }
@@ -118,7 +106,7 @@ section {
 
 .animation-element {
   img {
-  width: 300px;
+  width: 280px;
   height: auto;
   }
   opacity: 0;

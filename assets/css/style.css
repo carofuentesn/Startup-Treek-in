@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth; }
+
 body {
   margin: 0;
   padding: 0;
@@ -5,7 +8,7 @@ body {
 
 h1 {
   font-family: "Raleway", sans-serif;
-  font-size: 45px;
+  font-size: 40px;
   font-weight: 700;
   color: #221d23; }
 
@@ -47,6 +50,8 @@ nav {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px; }
+    .topnav a:hover {
+      color: #726f73; }
 
 .topnav__seccion, .icon {
   margin-top: 10px;
@@ -316,17 +321,6 @@ header {
     background-size: cover;
     background-position: center;
     height: 910px; } }
-/*main 1 {
-  img {
-    height: 90%;
-  }
-  div p {
-    line-height : 25px;
-  }
-  h2 {
-    text-align: center;
-  }
-}*/
 main h2 {
   text-align: center; }
 main h3 {
@@ -340,7 +334,7 @@ main h3 {
   flex-direction: column;
   padding: 0 10%; }
   .main__estadisticas .main__estadisticas-texto {
-    width: 300px; }
+    width: 290px; }
     .main__estadisticas .main__estadisticas-texto p {
       line-height: 25px; }
 
@@ -403,7 +397,7 @@ section {
   transition-delay: 1s;
   position: relative; }
   .animation-element img {
-    width: 300px;
+    width: 280px;
     height: auto; }
 
 .animation-element.in-view {
