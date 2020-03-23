@@ -9,7 +9,7 @@ button {
         background-color: $hover-state;
     }
     &:focus {
-        background-color:  #aeacaf;
+        background-color: $focus-state;
     }
 
 }
